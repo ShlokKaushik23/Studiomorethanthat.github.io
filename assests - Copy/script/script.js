@@ -237,3 +237,9 @@ slidesMobile[slideIndexMobile -1].style.display = "block";
 
 setTimeout(showSlidesMobile, 12000); // Change image every x seconds
 }
+
+
+
+// ====================== WORK PAGE ==============
+
+
