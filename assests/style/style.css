@@ -88,7 +88,7 @@ img,fieldset {
 	border:none;
 }
 header{
-  position: fixed;!important
+  position: fixed !important;
   z-index: var(--z_index_top3);
 }
 
@@ -249,7 +249,7 @@ header{
   from {opacity: .4}
   to {opacity: 1}
 }
-.
+
 /* ==== LOGO COVER SECTION  ===== */
 .cover_section{
   display: block;
