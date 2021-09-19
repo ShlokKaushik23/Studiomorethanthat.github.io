@@ -619,7 +619,7 @@ z-index: var(--z_index_top0);
 
 
 /* ===== TABLET MOBILE VIEW ========= */
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 1024px)  {
    body{
      background: var(--primary_color);
      overflow-x: hidden;
@@ -664,7 +664,7 @@ z-index: var(--z_index_top0);
 
   .navbar_container .nav_section  {
     position: absolute;
-    transform: translateX(550px);
+    transform: translateX(750px);
     transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
     top: -45px;
     right: 0px;
