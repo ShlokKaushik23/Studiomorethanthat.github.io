@@ -1566,6 +1566,8 @@ height: 110vh;
   width: 100vw;
  padding: 0 20px;
  margin-top: -100px;
+ margin-bottom: 20px;
+ background-color: red;
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 14px;
@@ -1631,7 +1633,7 @@ align-items: center;
  .work_container .work_main_section .work_detail{
    width: 100vw;
    padding: 0 20px;
-   margin-top: -10px;
+   margin-top: 0px
  }
  
 .work_container .work_main_section .work_detail .workline{
@@ -1782,23 +1784,18 @@ align-items: center;
 }
 
 
-.work_container .work_image_section .portrait .portrait_sec .work_description{
-  font-size: 18px;
-  line-height: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
- 
-  /* height: calc(100vh - 20vh); */
-}
 
-
-.work_container .work_image_section .portrait .portrait_sec .work_description {
+.work_container .work_image_section .portrait .portrait_sec{
  width: 100vw;  
- /* padding: 0 40px; */
- margin: 24px 0px;
- height: 100vw;
+ padding: 0 20px;
+}
+.work_container .work_image_section .portrait .portrait_sec .work_description {
+ width: 100%;  
+ /* padding: 0 20px; */
+ margin: 28px 0px;
+ height: 100%;
+ /* margin-bottom: 20px; */
+ background-color: red;
  
 }
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
