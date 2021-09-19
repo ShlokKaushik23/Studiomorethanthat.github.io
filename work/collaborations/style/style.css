@@ -1444,6 +1444,30 @@ margin-top: 48px;
 }
 
 
+/* ==================== MEDIA SCREEN 768px ================= */
+@media screen and (max-width: 768px) {
+  /* ========== WORK HAPPENINGS SECTION ======== */
+
+.work_container .other_happening_sections{
+  margin: auto 48px;
+}
+.work_container .other_happening_sections p{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.work_container .other_happening_section{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.work_container .other_happening_section .other_happening_box{
+   width: 200px;
+   height: 200px;
+  display: block;
+
+}
+}
 
 
 /* =================== MOBILE MEDIA QUERIES ================= */
@@ -1567,7 +1591,7 @@ height: 110vh;
  padding: 0 20px;
  margin-top: -100px;
  margin-bottom: 20px;
- background-color: red;
+
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 14px;
@@ -1792,10 +1816,9 @@ align-items: center;
 .work_container .work_image_section .portrait .portrait_sec .work_description {
  width: 100%;  
  /* padding: 0 20px; */
- margin: 28px 0px;
+ /* margin: 28px 0px; */
  height: 100%;
- /* margin-bottom: 20px; */
- background-color: red;
+
  
 }
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
