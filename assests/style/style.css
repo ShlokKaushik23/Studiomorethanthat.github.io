@@ -633,6 +633,7 @@ z-index: var(--z_index_top0);
      top: 0;
      left: 0;
      background-color: var(--primary_color);
+    
      width: 100%;
     z-index: 100;
   }
@@ -743,7 +744,7 @@ z-index: var(--z_index_top0);
      align-self: center;
      justify-content: center;
      height: 100vh;
-     background: #fff;
+     background: red;
 
    }
 
