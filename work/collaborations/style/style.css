@@ -1138,6 +1138,10 @@ main{
   display: none;
 }
 
+
+.navbar_container .navbar_items .navbar_item .categories_menu{
+  display: none;
+}
  /* =============== WORK SECTION.TEMPLATE A ============ */
  
 
@@ -1163,11 +1167,13 @@ main{
 .work_container .work_main_section .template_categories_container{
   display: block;
   position: relative;
+  
   width: 100vw;
  padding: 0 40px;
  z-index: 10;
  margin-top: calc(76px + 48px + 48px);
  margin-bottom: 48px;
+ margin-left: -40px;
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 28px;
@@ -1176,7 +1182,7 @@ main{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-justify-content: center;  
+justify-content: flex-start;  
 
 }
 .work_container .work_main_section .template_categories_container .template_categories_section ul li{
@@ -1319,7 +1325,7 @@ justify-content: center;
    width: 100vw;
    height: auto;
    padding: 0 40px;
-   margin-bottom: 48px;
+   /* margin-bottom: 48px; */
  }
 
 
@@ -1680,6 +1686,10 @@ height: 110vh;
       font-size: 24px;
       color: #ffffff;
   }
+
+  .navbar_container .navbar_items .navbar_item .categories_menu{
+    display: none;
+  }
   .navbar_container .nav_section .navbar_items .navbar_item.social_media {
      display: grid;
      grid-template-columns: 2;
@@ -1709,9 +1719,6 @@ height: 110vh;
     align-items: center;
   }
 
-
-  
-
 .work_section{
   width: 100vw;
   padding: 0 20px;
@@ -1721,7 +1728,6 @@ height: 110vh;
 .work_container {
   width: 100vw;
   height: auto;
-
 }
 
 .work_container .work_main_section .template_categories_container{
@@ -1730,17 +1736,18 @@ height: 110vh;
   width: 100vw;
  padding: 0 20px;
  margin: 0px;
+ margin-left: -40px;
  margin-top: calc(10px + 24px);
+ margin-bottom: 48px;
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 14px;
-  margin-left: -20px;
 }
 .work_container .work_main_section .template_categories_container .template_categories_section ul{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-justify-content: center;  
+justify-content: flex-start;  
 align-items: center;
 
 }
@@ -1756,7 +1763,7 @@ align-items: center;
   height: 15px;
   width: 2px;
   background-color:var(--green_color);
-  margin: 0 15px;
+  margin: 0 18px;
   position:absolute;
 }
 
@@ -1870,6 +1877,13 @@ align-items: center;
   margin-bottom: 10px;
 }
 
+
+@media screen and (max-device-width: 414px) {
+  .work_container .thumbnail_section{
+    width: 100vw;
+    padding: 0 40px;
+  }
+}
 /* ============== WORK DESCRPTION ============ */
 
 .work_container .work_infomation{
