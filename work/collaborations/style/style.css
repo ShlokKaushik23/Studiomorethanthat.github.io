@@ -1735,10 +1735,10 @@ height: 110vh;
   position: relative;
   width: 100vw;
  padding: 0 20px;
- margin: 0px;
+ margin: ;
  margin-left: -40px;
  margin-top: calc(10px + 24px);
- margin-bottom: 48px;
+
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 14px;
@@ -1878,7 +1878,7 @@ align-items: center;
 }
 
 
-@media screen and (max-device-width: 414px) {
+@media screen and (width: 414px) {
   .work_container .thumbnail_section{
     width: 100vw;
     padding: 0 40px;
