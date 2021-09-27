@@ -101,18 +101,19 @@ header{
   justify-content: space-between;
   align-items: flex-start;
   top: 0;
+  left:0 ;
   padding: 0 4.438rem;
   z-index: 100;
   height: 76px;
   background-color: #f3f2ef;
   z-index: var(--z_index_top3);
-  margin-left: calc(25px);
 
 }
 .navbar_container .nav_section{
   margin-top: 36px;
   z-index: var(--z_index_top3);
-
+  margin-left: calc(25px);
+ 
 }
 .navbar_container .nav_section ul{
   display: flex;
@@ -198,7 +199,7 @@ header{
   height: 120px;
   /* width: 114px; */
  margin-top: 42px;
-margin-right: -22px;
+margin-right: -47px;
  z-index: 100;
 }
 
@@ -323,12 +324,14 @@ position: fixed;
 .work_section .work_container .work_section_container .work_img{
   width: 400px;
   height: 400px;
+  
 }
 
 .work_section .work_container .work_section_container .work_img img{
   width: 100%;
   height: 100%;
-  background-size: cover;
+  object-position: center;
+  object-fit: cover;
 }
 
 .work_section .work_container .work_section_container .work_description{
@@ -342,11 +345,9 @@ position: fixed;
   z-index: 0;
 }
 
-.work_section .work_container .work_section_container .work_description:hover, .work_section .work_container .work_section_container .work_description:hover p{
+.work_section .work_container .work_section_container:hover , .work_section .work_container .work_section_container .work_description:hover , .work_section .work_container .work_section_container .work_description:hover p{
   background: #EFEFEF;
   transform: scale(1,1);
-  display: grid;
-  /* place-items: center; */
   white-space:inherit;
   position: inherit;
 }
@@ -651,10 +652,13 @@ position: fixed;
     /* height: auto; */
     max-width: 512px;
     height: 512px;
+    object-fit: cover;
+    object-position: center;
    }
    .work_mobile_container .work_mobile_section .work_mobile_img img{
     width: 100%;
     height: 100%;
+    
    }
    /* .work_mobile_container .work_mobile_section .work_mobile_description{
      width: 512px;
@@ -861,3 +865,4 @@ height: 110vh;
      transform: rotateX(180deg);
    }
 }
+
