@@ -1236,7 +1236,7 @@ main{
   width: 100vw;
  padding: 0 40px;
  z-index: 10;
- margin-top: calc(158px);
+ margin-top: calc(200px + 48px);
  margin-bottom: 48px;
  margin-left: -40px;
  font-family: 'dream_orphansregular';
@@ -1641,6 +1641,14 @@ justify-content: flex-start;
   font-weight: bold;
   margin-bottom: 20px;
 }
+.work_container .other_happening_sections .hr{
+  height: 3px;
+  width: 90vw;
+ padding: 0 20px;
+ background: var(--border);
+ margin-bottom: 20px;
+ /* margin-top: -100px; */
+}
 .work_container .other_happening_section{
   display: flex;
   justify-content: space-between;
@@ -1667,6 +1675,14 @@ justify-content: flex-start;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.work_container .other_happening_sections .hr{
+  height: 3px;
+  width: 90vw;
+ padding: 0 20px;
+ background: var(--border);
+ margin-bottom: 20px;
+ /* margin-top: -100px; */
 }
 .work_container .other_happening_section{
   display: flex;
@@ -2295,8 +2311,18 @@ padding: 0 20px;
 .work_container .other_happening_sections p{
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
+
+.work_container .other_happening_sections .hr{
+  height: 3px;
+  width: 90vw;
+ padding: 0 20px;
+ background: var(--border);
+ margin-bottom: 20px;
+ /* margin-top: -100px; */
+}
+
 .work_container .other_happening_section{
   display: flex;
   justify-content: space-between;
@@ -2402,7 +2428,49 @@ padding: 0 20px;
   
  
  .work_container .work_main_section .work_detail .heading{
-   font-size: 32px;
+   font-size: 30px;
  }
   
+}
+
+
+@media screen and (max-device-width: 360px) {
+
+  .navbar_container .nav_section  {
+    width: 60%;
+  }
+
+  .work_container .work_main_section .work_detail .heading{
+    font-size: 32px;
+    width: 300px;
+  }
+
+
+  .work_container .gallery_container .gallery .thumbnail_img{
+    width: 60px;
+    height: 60px;
+    display: block;
+   margin: 0;
+   margin: 5px;
+  }
+
+  .work_container .testimonial_section .testimonial{
+  font-size: 11px;
+  position: absolute;
+  margin-top: 270px;
+  margin-right: -180px;
+  color: #69696B;
+  opacity: 0.5;
+}
+
+.work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -48px; */
+  width: 100%;
+  height: calc(50px + 84px + 48px + 48px + 48px);
+  
+}
+
 }
