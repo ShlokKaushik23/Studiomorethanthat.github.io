@@ -194,6 +194,10 @@ header{
 }
 
 
+.navbar_container .navbar_items .navbar_item.workhide2{
+  display: none;
+}
+
 /* ============ DROP DOWN ============ */
 .navbar_container .navbar_items .navbar_item .categories_menu{
   display: none;
@@ -820,15 +824,19 @@ main{
 
 
 /* =========== WORK TAGS SECTION =========== */
+
 .work_container .work_tags_section{
+  width: 800px;
+  margin-top: 0px;
+}
+.work_container .work_tags_section .work_tag_section{
   display: flex;
+  flex-wrap: wrap;
+  float: left;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
-  width: 800px;
-
 }
-.work_container .work_tags_section .tags{
+.work_container .work_tags_section .work_tag_section .tags{
   border: 1px solid #0F996D;
   padding: 8px;
   font-size: 12px;
@@ -836,6 +844,7 @@ main{
   border-radius: 12px;
   margin: 6px auto;
   color: #0F996D;
+  
 }
 
 
@@ -1058,6 +1067,13 @@ main{
    font-family: 'dream_orphansregular';
    font-weight: normal;
 }
+
+.navbar_container .navbar_items .navbar_item.workhide2{
+  display: block;
+}
+.navbar_container .navbar_items .navbar_item.workhide1{
+  display: none;
+}
 .navbar_container .nav_section .navbar_items .navbar_item .underline{
    font-size: 36px;
    color: #ffffff;
@@ -1236,7 +1252,7 @@ main{
   width: 100vw;
  padding: 0 40px;
  z-index: 10;
- margin-top: calc(200px + 48px);
+ margin-top: calc(120px + 48px);
  margin-bottom: 48px;
  margin-left: -40px;
  font-family: 'dream_orphansregular';
@@ -1390,10 +1406,7 @@ justify-content: flex-start;
   align-items: center; */
   margin-bottom: 48px;
   width: 100vw;
-  padding: 0 40px;
-  background-color: red;
-
-  
+  padding: 0 40px;  
 }
 .work_container .work_infomation .work_desc{
   display: block;
@@ -1621,8 +1634,16 @@ justify-content: flex-start;
 
 
 /* =========== WORK TAGS SECTION =========== */
+
+
 .work_container .work_tags_section{
+  width: 600px;
+  margin-top: 0px;
+}
+.work_container .work_tags_section .work_tag_section{
   justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px;
   width: 100vw;
   padding: 0 40px;
 
@@ -2375,7 +2396,7 @@ padding: 0 20px;
     /* position:relative; */
   }
   
- /* ======== TEMPLATE IMAGES ============ */
+ /* ======== TEMPLATE GALLERY IMAGES ============ */
  .work_container .gallery_container .gallery{
   width: 100vw;
   display: grid;
@@ -2416,25 +2437,20 @@ padding: 0 20px;
 
 }
 
-@media screen and (max-device-width: 360px) {
-
-  
-  /* ======== HEADING SECTION ========== */
-  .work_container .work_main_section .work_detail{
-    width: 100vw;
-    padding: 0 20px;
-    margin-top: 0px
-  }
-  
- 
- .work_container .work_main_section .work_detail .heading{
-   font-size: 30px;
- }
-  
-}
-
 
 @media screen and (max-device-width: 360px) {
+
+    /* ======== HEADING SECTION ========== */
+    .work_container .work_main_section .work_detail{
+      width: 100vw;
+      padding: 0 20px;
+      margin-top: 0px
+    }
+    
+   
+   .work_container .work_main_section .work_detail .heading{
+     font-size: 30px;
+   }
 
   .navbar_container .nav_section  {
     width: 60%;
@@ -2471,6 +2487,46 @@ padding: 0 20px;
   width: 100%;
   height: calc(50px + 84px + 48px + 48px + 48px);
   
+}
+
+ 
+ /* ======== TEMPLATE GALLERY IMAGES ============ */
+ .work_container .gallery_container .gallery{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0;
+  place-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  padding: 0 20px;
+}
+.work_container .gallery_container .gallery .thumbnail_img{
+  width: 71px;
+  height: 71px;
+  display: block;
+ margin: 0;
+ margin: 5px;
+}
+.work_container .gallery_container .thumbnail_img.next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work_container .gallery_container .thumbnail_img.next .nextimages{
+  position: absolute;
+  font-size: 24px;
+  font-family: 'dream_orphansregular';
+  color: #010101;
+}
+
+.work_container .gallery_container .thumbnail_img.next img{
+  opacity: 0.5;
+  
+}
+.work_container .gallery_container .gallery .thumbnail_img.hide{
+  display: none;
 }
 
 }

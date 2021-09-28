@@ -424,6 +424,24 @@ position: fixed;
    font-family: 'dream_orphansregular';
    font-weight: normal;
 }
+
+
+.navbar_container .nav_section ul li .underline:hover::before{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: var(--primary_color);
+  position: absolute;
+  margin-top: 24px;
+}
+.navbar_container .nav_section ul li .active::before{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: var(--primary_color);
+  position: absolute;
+  margin-top: 24px;
+}
 .navbar_container .nav_section .navbar_items .navbar_item .underline{
    font-size: 36px;
    color: #ffffff;
