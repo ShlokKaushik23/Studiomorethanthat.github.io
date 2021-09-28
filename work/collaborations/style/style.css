@@ -1029,16 +1029,11 @@ main{
   background-color:#fff;
   height: 200px;
   z-index: 100;
-  position: fixed;
+  position: relative;
  }
  
-
-
-
-
-
  .navbar_container .nav_section  {
-   position: absolute;
+   position: fixed;
    transform: translateX(750px);
    transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
    top: -45px;
@@ -1233,7 +1228,6 @@ main{
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  margin-top: 100px;
   width: 100vw;
   padding: 0 40px;
   
@@ -1248,13 +1242,12 @@ main{
 .work_container .work_main_section .template_categories_container{
   display: block;
   position: relative;
-  
   width: 100vw;
  padding: 0 40px;
  z-index: 10;
- margin-top: calc(120px + 48px);
  margin-bottom: 48px;
  margin-left: -40px;
+ margin-top: 84px;
  font-family: 'dream_orphansregular';
 
  
@@ -1637,8 +1630,8 @@ justify-content: flex-start;
 
 
 .work_container .work_tags_section{
-  width: 600px;
-  margin-top: 0px;
+  width: 800px;
+  margin-bottom: 200px;
 }
 .work_container .work_tags_section .work_tag_section{
   justify-content: flex-start;
@@ -1656,6 +1649,7 @@ justify-content: flex-start;
 
 .work_container .other_happening_sections{
   margin: auto 48px;
+  margin-bottom: 100px;
 }
 .work_container .other_happening_sections p{
   font-size: 24px;
@@ -1691,6 +1685,7 @@ justify-content: flex-start;
 
 .work_container .other_happening_sections{
   margin: auto 48px;
+  margin-bottom: 100px;
 }
 .work_container .other_happening_sections p{
   font-size: 24px;
@@ -1786,18 +1781,19 @@ justify-content: flex-start;
     position: relative;
   }
   header{
-    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--primary_color);
     width: 100%;
     z-index: 99;
-
+    position: relative;
+    
   }
   .navbar_container{
    height: 110.2px;
    margin: 0;
    padding: 0;
+   position: relative;
   }
   main{
    display: relative;
@@ -1883,8 +1879,7 @@ height: 110vh;
  padding: 0 20px;
  margin: 0px;
  margin-left: -40px;
- margin-top: calc(10px + 24px);
-
+margin-top: 24px;
 }
 .work_container .work_main_section .template_categories_container .template_categories_section{
   font-size: 14px;
@@ -1944,6 +1939,7 @@ align-items: center;
    flex-direction: column;
    width: 100vw;
    padding:  0 20px;
+   margin: 0px;
  }
 
 
@@ -2236,12 +2232,14 @@ padding: 0 20px;
   flex-wrap: wrap;
   width: 100vw;
   padding: 0 20px;
-
+  margin-bottom: 0px;
 }
 .work_container .work_tags_section .tags{
   font-size: 12px;
   justify-content: flex-start;
 }
+
+
 
 /* =================== REACHUS SECTION ============== */
 
@@ -2323,16 +2321,18 @@ padding: 0 20px;
 /* ========== WORK HAPPENINGS SECTION ======== */
 
 .work_container .other_happening_sections{
-  margin: auto 48px;
+  /* margin: 0px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.work_container .other_happening_sections p{
+.work_container .other_happening_sections .happenings{
   font-size: 24px;
   font-weight: bold;
   /* margin-bottom: 20px; */
+  margin-left: -40px;
+
 }
 
 .work_container .other_happening_sections .hr{
@@ -2435,6 +2435,14 @@ padding: 0 20px;
   display: none;
 }
 
+.work_container .other_happening_sections .happenings{
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  margin-left: -30px;
+
+}
+
 }
 
 
@@ -2529,4 +2537,23 @@ padding: 0 20px;
   display: none;
 }
 
+.work_container .other_happening_sections p{
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  margin-left: -20px;
+
+}
+
+}
+
+@media screen and (max-device-width: 320px) {
+.work_container .other_happening_sections .happenings{
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  margin-left: 10px;
+  width: 300px;
+
+}
 }
