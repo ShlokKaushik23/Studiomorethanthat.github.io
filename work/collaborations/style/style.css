@@ -1693,6 +1693,16 @@ justify-content: flex-start;
 
 /* ==================== MEDIA SCREEN 768px ================= */
 @media screen and (max-width: 768px) {
+
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
+  }
   /* ========== WORK HAPPENINGS SECTION ======== */
 
 .work_container .other_happening_sections{
@@ -1839,6 +1849,16 @@ height: 110vh;
   .navbar_container .nav_section .navbar_items .navbar_item .underline{
       font-size: 24px;
       color: #ffffff;
+  }
+
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
   }
 
   .navbar_container .navbar_items .navbar_item .categories_menu{
@@ -2383,6 +2403,16 @@ padding: 0 20px;
 
 @media screen and (max-device-width: 390px){
 
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
+  }
+
 .work_container .gallery_container .gallery .thumbnail_img{
   width: 70px;
   height: 70px;
@@ -2432,6 +2462,16 @@ opacity: 0.5;
 }
 
 @media screen and (max-device-width: 375px) {
+
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
+  }
 
   
  /* ======== HEADING SECTION ========== */
@@ -2539,6 +2579,16 @@ opacity: 0.5;
 
 @media screen and (max-device-width: 360px) {
 
+
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
+  }
     /* ======== HEADING SECTION ========== */
     .work_container .work_main_section .work_detail{
       width: 100vw;
@@ -2639,6 +2689,16 @@ opacity: 0.5;
 }
 
 @media screen and (max-device-width: 320px) {
+
+  .navbar_container .nav_section ul li .activemob::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--primary_color);
+    position: absolute;
+    margin-top: 24px;
+    display: block;
+  }
 .work_container .other_happening_sections .happenings{
   font-size: 22px;
   font-weight: bold;
