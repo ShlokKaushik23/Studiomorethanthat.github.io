@@ -125,6 +125,8 @@ function myRemove() {
 
 
 
+
+
 var slideIndex = 0;
 var slideIndexCurrent = 0;
 showSlides();
