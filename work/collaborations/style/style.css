@@ -149,9 +149,6 @@ header{
   margin-top: 24px;
 }
 
-.navbar_container .nav_section ul li .activemob::before{
-  display: none;
-}
 
 .navbar_container .nav_section .navbar_items .navbar_item.social_media{
   display: none;
@@ -294,9 +291,10 @@ main{
 
 .work_section .top_white_section{
   background: var(--primary_color);
-  margin-top: 76px;
+  /* background-color: red; */
+  margin-top: -25px;
   width: 100%;
-  margin-left: 0px;
+  margin-left: -48px;
   height: 24px;
   /* padding: 0 120px; */
   position: fixed;
@@ -309,7 +307,7 @@ main{
 
   /* margin-top: 80px; */
   width: 100%;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
  
 }
 .work_container{
@@ -512,14 +510,17 @@ main{
   margin-bottom: 48px;
   display:grid;
   width: 800px;
-
+  height: 533px;
+  
 }
 .work_container .work_image_section .landscape img{
- 
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-position: center;
   background-size: cover;
   object-position: center center;
+  object-fit: cover;
+  
 }
 
 .work_container .work_image_section .portrait{
@@ -748,7 +749,8 @@ main{
   margin-bottom: 48px;
 }
 .work_container .testimonial_section .testimonial_description .one{
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
+  
 }
 .work_container .testimonial_section .testimonial_desc_left{
   width: 650px;
@@ -839,7 +841,7 @@ main{
   margin: 6px;
   color: #0F996D;  
   width:fit-content;
-
+  text-transform: uppercase;
   
 }
 
@@ -1321,7 +1323,9 @@ justify-content: flex-start;
  /* ======== HEADING SECTION ========== */
  .work_container .work_main_section .work_detail{
    margin: 0px;
-   
+   width: 400px; 
+   margin-bottom: -48px;
+   /* background-color: red; */
  }
  
 .work_container .work_main_section .work_detail .workline{
@@ -1436,7 +1440,7 @@ justify-content: flex-start;
   margin-top: 0px;
   width: 100vw;
   padding: 0 40px;
-  
+  height: auto;
 }
 .work_container .work_image_section .landscape img{
   background-size: cover;
@@ -2106,6 +2110,7 @@ align-items: center;
   display:grid;
   width: 100vw;
   padding: 0 20px;
+  height: inherit;
 }
 .work_container .work_image_section .landscape img{
   background-size: cover;
