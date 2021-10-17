@@ -356,14 +356,14 @@ main{
   font-family: var(--primary_font);
   color: #010101;
   width: 360px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .work_container .work_main_section .work_detail  .subheading{
   font-size: 24px;
   font-style: italic;
   color: #010101;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
 }
 .work_container .work_main_section .work_detail .byline{
@@ -1336,10 +1336,12 @@ justify-content: flex-start;
 }
 .work_container .work_main_section .work_detail .heading{
   font-size: 36px;
+  margin-bottom: 15px;
 }
 
 .work_container .work_main_section .work_detail  .subheading{
   font-size: 24px;
+  margin-bottom: 15px;
 }
 .work_container .work_main_section .work_detail .byline{
   font-size: 18px;
@@ -2612,10 +2614,7 @@ opacity: 0.5;
     }
     
    
-   .work_container .work_main_section .work_detail .heading{
-     font-size: 30px;
-   }
-
+   
   .navbar_container .nav_section  {
     width: 60%;
   }
@@ -2623,6 +2622,7 @@ opacity: 0.5;
   .work_container .work_main_section .work_detail .heading{
     font-size: 32px;
     width: 300px;
+  
   }
 
 
