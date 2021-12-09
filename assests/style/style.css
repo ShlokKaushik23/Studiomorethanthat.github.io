@@ -615,7 +615,7 @@ z-index: var(--z_index_top0);
  width: 100%;
 }
 
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (width: 1366px) and (orientation: landscape) {
   .contact_container .contact_container_right .contact_reachus{
     margin-left: 100px;
     margin-top: 380px;
