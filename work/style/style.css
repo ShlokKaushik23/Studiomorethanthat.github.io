@@ -4253,7 +4253,7 @@ margin-bottom: 20px;
  }
 
 
-@media screen and (max-device-width: 390px){
+@media screen and (max-device-width: 393px){
 
  .navbar_container .nav_section ul li .activemob::before{
    content: '';
@@ -4266,8 +4266,8 @@ margin-bottom: 20px;
  }
 
 .work_container .gallery_container .gallery .thumbnail_img{
- width: 70px;
- height: 70px;
+ width: 75px;
+ height: 75px;
  display: block;
 margin: 4px;
 padding: 0px;
