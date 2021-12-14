@@ -47,19 +47,13 @@
 }
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
- width: 8px;
+ width: 10px;
  background-clip: padding-box;
- border: 2px solid #fff;
-
-
  position: relative;
- background: #f4f4f4;
 }
 
 *::-webkit-scrollbar-thumb {
- -webkit-box-shadow: inset 0 0 0 10px;
-         box-shadow: inset 0 0 0 10px;
- border-radius: 13px;
+ background-color: #B3AEAE;
 }
 
 @font-face {
@@ -2207,7 +2201,7 @@ color: #010101;
 
 
 
-@media screen and (max-device-width: 390px) {
+@media screen and (max-device-width: 393px) {
 
  .navbar_container .nav_section  {
    width: 60%;
@@ -2270,70 +2264,6 @@ font-size: 21px;
 }
 
 }
-@media screen and (max-device-width: 393px) and (-webkit-min-device-pixel-ratio: 2)  {
-
-  .navbar_container .nav_section  {
-    width: 60%;
-  }
- 
- 
- .work_mobile_container .container{
- 
- width: 205px;
- height: calc(205x + 56px + 48px);
- margin-left: 340px;
- 
- margin-bottom: calc(36px);
- /* margin-top: 500px; */
- }
- 
- .card{
- 
- margin-top: 144px;
- width: 210px;
- height: calc(210px + 56px + 48px);
- 
- }
- 
- .recto img{
- 
- width: 210px;
- height: 210px;
- }
- .verso{
-  padding: 0px 15%;
- }
- 
- .verso h1{
- font-size: 1.2rem;
- }
- 
- .verso p{
- text-align: left;
-  /* position: fixed; */
-  display: block;
-  font-size: 0.9rem;
- }
- 
- 
- 
- .verso a img {
- height: 38px;
- width: 56px;
- }
- .infos{
- 
- }
- 
- .infos .title{
- 
- font-size: 21px;
- 
-  letter-spacing: 1px;
- }
- 
- }
- 
 
 @media screen and (max-device-width: 375px) {
 
