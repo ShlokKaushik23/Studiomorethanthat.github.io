@@ -41,7 +41,7 @@
 
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
- width: 10px;
+ width: 7px;
  background-clip: padding-box;
  position: relative;
 }
@@ -920,8 +920,9 @@ margin-left: 24px;
  display: block;
 }
 .work_container .work_full_description_section .work_full_description .work_desc_heading{
-    margin-bottom: 24px;
-    font-size: 2rem;
+    margin-bottom: 6px;
+    font-size: 18px;
+    text-decoration: underline;
 }
 
 
@@ -3942,7 +3943,7 @@ padding: 0px 20px;
 
 
 .work_container .work_full_description_section .work_full_description .work_desc_heading{
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 
