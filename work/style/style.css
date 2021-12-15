@@ -271,10 +271,10 @@ header{
 
 
 .logo_work img{
- height: 120px;
+ height: 160px;
  /* width: 114px; */
-margin-top: 42px;
-margin-right: 26px;
+margin-top: 25px;
+margin-right: -18px;
 z-index: 100;
 }
 .work_section .left_panel{
@@ -924,7 +924,9 @@ margin-left: 24px;
     font-size: 18px;
     text-decoration: underline;
 }
-
+.work_container .work_full_description_section .work_full_description .work_desc_heading.nobold{
+    font-weight: normal;
+}
 
 /* =========== BOTTOM ABOUT SECTION =============== */
 
@@ -1471,13 +1473,13 @@ margin-left: 24px;
   }
   
   
-  .logo_work img{
-   height: 120px;
-   /* width: 114px; */
-  margin-top: 42px;
-  margin-right: 26px;
-  z-index: 100;
-  }
+    .logo_work img{
+        height: 160px;
+        /* width: 114px; */
+       margin-top: 25px;
+       margin-right: -18px;
+       z-index: 100;
+       }
   .work_section .left_panel{
    margin-top: -100px;
   }

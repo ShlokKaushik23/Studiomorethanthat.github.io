@@ -40,7 +40,7 @@
 }
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
- width: 10px;
+ width: 7px;
  background-clip: padding-box;
  position: relative;
 }
@@ -174,17 +174,18 @@ header{
 }
 
 .navbar_container  .logo img{
- height: 299px;
+ height: 355px;
  position:relative;
  display: block;
- margin-top: 36px;
-
+ margin-top: 6px;
+ margin-right: -90px;
 }
 .sml-logo img{
- height: 150px;
+ height: 180px;
  display: block;
  /* background-image: linear-gradient(to bottom, transparent 0%, #000 100%, #000 100%); */
- margin-top: 36px;
+ margin-top: 21px;
+ margin-right: -45px;
 
 }
 
@@ -829,9 +830,9 @@ z-index: var(--z_index_top0);
   .navbar_container .mobile_header .mobilelogo img{
     position: absolute;
     display: block;
-    height: 159px;
-    top: 30px;
-    left: 39px;
+    height: 199px;
+    top: 10px;
+    left: -5px;
     z-index: var(--z_index_top3);
 
   }
@@ -1588,9 +1589,9 @@ position: relative;
  }
  .navbar_container .mobile_header .mobilelogo img{
    /* height: 129px; */
-   height: 8.063rem;
-   top: 24px;
-   left: 19px;
+   height: 10.063rem;
+   top: 7.8px;
+   left: -21px;
 
  }
 
