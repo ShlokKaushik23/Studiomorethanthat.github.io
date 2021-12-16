@@ -358,6 +358,7 @@ scroll-behavior: auto;
 margin-top: 100px;
 
 }
+
 .work_container .work_main_section{
  display: -ms-grid;
  display: grid;
@@ -496,6 +497,7 @@ margin-top: 100px;
  line-height: 32px; 
  margin: -24px 60px 48px 54px;
  color: #757575;
+ 
 }
 .work_container .work_main_section .template_img{
 
@@ -513,6 +515,7 @@ margin-top: 100px;
 
 /* =========== WORK DESCRIPTION ======== */
 
+
 .work_container .work_infomation{
  display: -webkit-box;
  display: -ms-flexbox;
@@ -521,6 +524,7 @@ margin-top: 100px;
  align-items: center; */
  margin-bottom: 48px;
  width: 100%;
+ 
 }
 .work_container .work_infomation .work_info{
  line-height: 24px;
@@ -1201,6 +1205,109 @@ margin-left: 24px;
  color: #414040;
 
 }
+
+
+/* ================ TEMPLATE B ================== */
+
+.work_container.templateB{
+    margin-top: 200px;
+}
+
+.work_container .work_main_section.templateB{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 40px 50%;
+    grid-template-columns: 35% 65%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            align-items: center;
+    grid-gap: 40px;
+    margin-bottom: 72px;
+   }
+   .work_container .work_main_section .template_categories_container{
+    display: none
+   }
+   .work_container .work_main_section .work_detail.templateB{
+    font-family: var(--primary_font);
+    margin: 0;
+   width: 300px;
+   }
+   
+   
+   .work_container .work_main_section .work_detail .workline{
+    font-family: 'dream_orphansregular' ;
+    font-size: 14px;
+    color: #010101;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+   }
+   .work_container .work_main_section .work_detail .heading{
+    font-size: 36px;
+    font-family: var(--primary_font);
+    color: #010101;
+    width: 300px;
+    margin-bottom: 10px;
+   }
+   
+   .work_container .work_main_section .work_detail  .subheading{
+    font-size: 24px;
+    font-style: italic;
+    color: #010101;
+    margin-bottom: 10px;
+   
+   }
+   .work_container .work_main_section .work_detail .byline{
+    font-size: 18px;
+    color: #010101;
+    margin-bottom: 5px;
+   
+   }
+   .work_container .work_main_section .work_detail hr{
+    margin: 7px 0;
+    height: 3px;
+    width: 300px;
+    background: var(--border);
+   }
+   
+   .work_container .work_main_section .work_detail .date_section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+    width: 300px;
+   
+   }
+   .work_container .work_main_section .work_detail .date_section .year p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -1px;
+    color: #010101;
+   }
+
+
+   .work_container .work_main_section .template_img.templateB{
+
+    height: 360px;
+    background-size: contain;
+ object-fit: cover;
+ object-position: center center;
+    width: 460px;
+   }
+   .work_container .work_main_section .template_img img{
+    width: 100%;
+    
+    /* float: right; */
+    height: 100%;
+    background-size: cover;
+    /* position:relative; */
+   }
 
 
 @media screen and (max-width: 1024px) and (orientation: landscape){
