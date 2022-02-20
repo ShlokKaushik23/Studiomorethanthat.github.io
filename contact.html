@@ -129,14 +129,16 @@
          <div class="contact_reachus">
            <p class="contact_us">Contact Us</p>
             <div class="contact_form">
+               
+              <form method="POST" name="google-sheet">
               <div class="contact_name">
                 <div class="fname">
-                  <input type="text" name="" value="" placeholder="First Name">
+                  <input type="text" id="fname" name="First Name" placeholder="First Name">
                 </div>
 
                 <div class="lname">
 
-                  <input type="text" name="" value="" placeholder="Last Name">
+                  <input type="text" id="fname" name="Last Name" placeholder="Last Name">
                 </div>
 
               </div>
@@ -144,15 +146,18 @@
               <div class="contact_detail">
                 <div class="email">
 
-                <input type="text" name="" value="" placeholder="Email">
+                <input type="text" id="fname" name="Email" placeholder="Email">
                </div>
-                 <textarea name="name" rows="5" cols="42" placeholder="Message"></textarea>
+                 <textarea name="Message" rows="5" cols="42" placeholder="Message"></textarea>
 
               </div>
 
               <div class="submit_btn">
-                <button type="button" name="button">Submit</button>
+                <input type="submit" value="Submit" name="submit"></input>
               </div>
+
+            </form>
+
             </div>
          </div>
        </div>
@@ -196,5 +201,22 @@
   </footer>
 
 <script type="text/javascript" src="assests\script\script.js"></script>
+
+<script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby7hxnvwlW6K1c1LZcdHvF5IZdsnuVgPnxa98EI6M-JXbziAcBfiICLFrEEa4cv-x5MdQ/exec'
+   
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for contacting..."))
+      .catch(error => console.log('Error', error.message))
+  })
+
+
+</script>
 </body>
 </html>
