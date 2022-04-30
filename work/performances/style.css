@@ -306,17 +306,12 @@
   
   .work_section{
    margin-right: 220px;
-  
-   /* margin-top: 80px; */
    width: 100%;
-   /* overflow-x: scroll; */
-  
   }
   .work_container{
    display: block;
    width: 100%;
-   /* z-index: -2; */
-   /* position: relative; */
+
   width: 800px;
   scroll-behavior: auto;
   margin-top: 100px;
@@ -327,7 +322,6 @@
    grid-template-columns: 50% 50%;
    justify-content: space-between;
    grid-gap: 40px;
-   /* margin: 0px 10%; */
    margin-bottom: 72px;
   
   }
@@ -335,13 +329,8 @@
    display: none
   }
   .work_container .work_main_section .work_detail{
-   /* max-width: 399px; */
-  
    font-family: var(--primary_font);
    margin-top: calc(72px + 70px);
-  
-   /* height: calc(100vh - 20vh); */
-   
   }
   
   
@@ -1810,9 +1799,7 @@
   
   }
   
-  
-  
-  
+
   /* =================== MOBILE MEDIA QUERIES ================= */
   
   @media screen and (max-device-width: 480px) {
