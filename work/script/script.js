@@ -1,38 +1,29 @@
+    
 
-    
-    // ===== NAV CONTAINER =========
-    
-    var isActive = false;
-    
-    $('.js-menu').on('click', function() {
-        if (isActive) {
-            $(this).removeClass('active');
-        $('body').removeClass('dark');
-    
-            $('body').removeClass('menu-open');
+    function myfunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+          x.style.display = "contents";
         } else {
-        $(this).addClass('active');
-            $('body').addClass('dark');
-    
-            $('body').addClass('menu-open');
+          x.style.display = "none";
         }
-    
-        isActive = !isActive;
-    });
-    
-    var toggleButton = document.getElementById('toggle');
-    
-    toggleButton.addEventListener("click", myFunction );
-    
-    function myFunction(){
-      document.getElementById('nav_section').style.display = "block";
-    
-    }
-    
-    toggleButton.addEventListener("dblclick", myRemove);
-    
-    function myRemove() {
-      document.getElementById('nav_section').style.display = "none";
-    }
-    
-    
+      }
+
+
+
+      var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function() {
+        var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+
+        if(scrollTop > lastScrollTop){
+          navbar.style.top = "-200px";
+
+        }
+        else {
+          navbar.style.top = "0";
+
+        }
+        lastScrollTop = scrollTop;
+      })

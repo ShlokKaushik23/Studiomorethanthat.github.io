@@ -74,6 +74,7 @@ body{
 }
 li{
  list-style-type: none;
+ text-decoration: none;
 }
 a{
  text-decoration: none;
@@ -646,7 +647,7 @@ z-index: var(--z_index_top0);
 .contact_container .contact_container_right  .contact_form  .email{
  margin-bottom: 10px;
 }
-.contact_container .contact_container_right  .contact_form .submit_btn input{
+.contact_container .contact_container_right  .contact_form .submit_btn button{
  width: 80px;
  height: 40px;
  outline: none;
@@ -660,7 +661,7 @@ z-index: var(--z_index_top0);
  text-transform: uppercase;
 
 }
-.contact_container .contact_container_right  .contact_form .submit_btn input:hover{
+.contact_container .contact_container_right  .contact_form .submit_btn button:hover{
  border: 1px solid var(--secondary_color);
  background: var(--primary_color);
  color: var(--secondary_color);
