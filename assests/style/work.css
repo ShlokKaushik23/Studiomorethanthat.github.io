@@ -148,6 +148,15 @@ header{
  margin-top: -1.8px;
 }
 
+.navbar_container .nav_section ul li a {
+  color: var(--primary_color);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'dream_orphansregular';
+  letter-spacing: 1px;
+  position: relative;
+  z-index: var(--z_index_top3);
+ }
 
 .navbar_container .nav_section ul li .underline:hover::before{
  content: '';

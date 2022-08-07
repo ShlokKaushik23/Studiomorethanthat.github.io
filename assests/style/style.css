@@ -124,6 +124,8 @@ header{
 .navbar_container .nav_section{
  margin-top: 36px;
  z-index: var(--z_index_top3);
+ margin-left: calc(25px);
+
 
 }
 .navbar_container .nav_section ul{
