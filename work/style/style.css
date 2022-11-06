@@ -523,6 +523,16 @@ margin-top: 100px;
  background-size: cover;
  /* position:relative; */
 }
+.work_container .work_main_section .template_img video{
+    width: 100%;
+    
+    /* float: right; */
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+
+    /* position:relative; */
+   }
 
 /* =========== WORK DESCRIPTION ======== */
 
