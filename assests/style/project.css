@@ -1,0 +1,463 @@
+:root{
+
+  
+  
+   /* font-family  */
+  
+   --primary_font: 'Playfair Display', serif;
+
+  
+   /* Margense */
+   --header_height: 6.25rem;
+  
+   /* z-index  */
+   --z_index_top0: -2;
+   --z_index_top: -1;
+   --z_index_top1: 1;
+   --z_index_top2: 3;
+   --z_index_top3: 4;
+  
+  
+  }
+  *::-webkit-scrollbar,
+  *::-webkit-scrollbar-thumb {
+   width: 7px;
+   background-clip: padding-box;
+   position: relative;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+   background-color: #B3AEAE;
+  }
+  
+  
+  
+  @font-face {
+     font-family: 'dream_orphansregular';
+     src: url('dream_orphans-webfont.woff2') format('woff2'),
+          url('dream_orphans-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+  
+  }
+  *{
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+  }
+  html{
+   scroll-behavior: auto;
+  }
+  body{
+   font-family: var(--primary_font);
+   overflow-x: hidden;
+  }
+  li{
+   list-style-type: none;
+   text-decoration: none;
+  }
+  a{
+   text-decoration: none;
+  }
+  
+  html,body,address,blockquote,div,
+  form,fieldset,caption,
+  h1,h2,h3,h4,h5,h6,
+  hr,ul,li,ol,ul,
+  table,tr,td,th,p,img {
+   margin:0;
+   padding:0;
+  }
+  
+  img,fieldset {
+   border:none;
+   margin: 0;
+   padding: 0;
+   display: block;
+
+  }
+  a{
+    color: inherit;
+  }
+  body{
+    background-color: #000;
+  }
+
+
+  main{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  .main_container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  
+    /* margin-bottom: -1%; */
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .main_container.mb{
+    display: block;
+  }
+
+  .main_container .padding{
+    padding: 2.5% 0;
+  }
+ 
+  .main_container .container_section{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .main_container .container_section .hero_image{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+
+  }
+  .main_container .container_section .hero_image img{
+    width: 100%;
+    height: 100%;
+    object-position:center;
+    object-fit:cover;
+    background-size:cover;
+
+  }
+
+  .main_container .container_section .portrait_section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .main_container .container_section .portrait_section .portrait_container{
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+    width: 100%;
+  }
+
+  .main_container .container_section .portrait_section .portrait_video{
+    width: 360px;
+    height: 540px;
+  }
+
+
+  .main_container .container_section .portrait_section .portrait_video img{
+    width: 100%;
+    height: 100%;    
+    background-position: center;
+    background-size: cover;
+    background-color: green;
+    object-fit: cover;
+  }
+    
+  .main_container .container_section .portrait_section .portrait_video iframe{
+    width: 100%;
+    height: 100%;    
+  }
+  .main_container .container_section .portrait_section .section_details{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .main_container .container_section .portrait_section .section_details h1{
+    font-family: var(--primary_font);
+    font-weight: 500;
+    font-weight: 1.25rem;
+  }
+  .main_container .container_section .portrait_section .section_details p{
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    font-family: var(--primary_font);
+  }
+
+
+  /* ==== PREVIOUS SHOW SECTION ====== */
+  .main_container .container_section .about_show_section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 2.5% 0  2.5% 12.5%;
+    background-color: #eaaf38;
+    color: #fff;
+
+  }
+  .main_container .container_section .about_show_section h1{
+    font-family: var(--primary_font);
+    font-weight: 500;
+    font-weight: 1.25rem;
+    margin-bottom: 1.5%;
+  }
+  .main_container .container_section .about_show_section p{
+    font-family:var(--primary_font);
+    line-height: 2rem;
+    font-size: 1.125rem;
+    margin-bottom: 1%;
+    
+  }
+
+/* ========= VIDEO TRAIL SECTION ========= */
+.main_container .container_section .video_section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    /* padding: 2.5%; */
+
+}
+.main_container .container_section .hero_video{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .main_container .container_section .hero_video img{
+    width: 100%;
+    height: 100%;
+    object-position:center;
+    object-fit:cover;
+    background-size:auto;
+
+  }
+
+
+
+  /* ===== GALLERY SECTION ======= */
+  .main_container .container_section .gallery_container {
+    height: 100%;
+  }
+  .main_container .container_section .gallery_container .gallery_section{
+    height: 50%;
+    /* padding: 2.5% 0; */
+  }
+
+  /* ====== LOGO IMAGES ====== */
+
+  .main_container .container_section .gallery_container .gallery_section .logo_container  
+  {
+    width: 100%;
+    
+  }
+  .main_container .container_section .gallery_container .gallery_section .logo_container .logo_images{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    
+  }
+
+  .main_container .container_section .gallery_container .gallery_section .logo_container .logo_images .logo_img{
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+    
+    
+  }
+  .main_container .container_section .gallery_container .gallery_section .logo_container .logo_images .logo_img.long{
+    width: 250px;
+  }
+
+  
+  .main_container .container_section .gallery_container .gallery_section .logo_container .logo_images .logo_img img{
+    width: 100%;
+    height: 100%;
+    object-position:center;
+    object-fit:contain;
+    background-size:contain;
+  }
+
+  /* ======= BELOW SUPPORT SECTION ========== */
+
+
+
+  .main_container .container_section .gallery_container .gallery_section h1{
+    font-family: var(--primary_font);
+    font-weight: 500;
+    /* margin-bottom: 2rem; */
+    padding: 0% 0 0% 12.5%;
+    
+  }
+
+  .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+  .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery a {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: block;
+    padding: 10px;
+
+  }
+
+  .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery a img {
+    width: 100%;
+    height: 100%;
+    object-position:center;
+    object-fit:cover;
+    background-size:cover;
+  }
+
+  .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery .thumbnail_img.next{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+   }
+   .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery .thumbnail_img.next .nextimages{
+    position: absolute;
+    font-size: 24px;
+    font-family: 'dream_orphansregular';
+    color: #010101;
+   }
+   
+   .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery .thumbnail_img.next img{
+    opacity: 0.5;
+    object-position:center;
+    object-fit:cover;
+    background-size:cover;
+   }
+
+   .main_container .container_section .gallery_container .gallery_section .gallery_images .gallery .thumbnail_img.hide{
+    display: none;
+   }
+   
+   .main_container .container_section .gallery_container .press_container {
+    width: 100vw;
+    height: 50%;
+    background-color: #eaaf38;
+   }
+
+   .main_container .container_section .gallery_container .press_container .press_section{
+    position: relative;
+
+    padding: 0% 0 0% 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100%;
+   }
+   .main_container .container_section .gallery_container .press_container .press_section h1{
+    font-family: var(--primary_font);
+    font-weight: 500;
+    font-weight: 1.25rem;
+    margin-bottom: 2%;
+   }
+   .main_container .container_section .gallery_container .press_container .press_section p {
+    font-family:var(--primary_font);
+    font-size: 1.125rem;
+    margin-bottom: 1%;
+
+   }
+   .main_container .container_section .gallery_container .press_container .press_section p a{
+    color: #010101;
+   }
+
+
+   /* ============ LAST SECTION IMAGE ============= */
+   .main_container .container_section .gallery_container .last_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .main_container .container_section .gallery_container .last_section  .image_section{
+    width:500px;
+    height: 250px;
+    z-index: 100; 
+    margin: 0 0 2.5% 0;
+    }
+
+   .main_container .container_section .gallery_container .last_section  .image_section img{
+    width: 100%;
+    height: 100%;
+    object-position:center;
+    object-fit:contain;
+    background-size:contain;
+   }
+
+   .main_container .container_section .gallery_container .press_container .press_section  .support_image {
+     width: 100px;
+     /* display: flex; */
+     /* justify-content: center; */
+   }
+
+   .main_container .container_section .gallery_container .press_container .press_section .support_image img{
+    height: 100%;
+    width: 100%;
+   }
+
+   
+
+   /* ========= CONTACT SECTION ========= */
+  .contact_container{
+    width: 100%;
+    padding: 2.5% 0%;
+    height: 100%;
+    background-color: #eaaf38;
+
+   }
+
+   .contact_container .contact_section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #eaaf38;
+
+   }
+   .contact_container .contact_section p{
+    text-align: center;
+    font-family:var(--primary_font);
+    font-size: 2rem;
+    margin-bottom: 5%;
+   }
+
+    .contact_container .contact_section h1 a{
+    text-align: center;
+    font-family:var(--primary_font);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: normal;
+   }
+
+
+   @media screen and (max-width: 1024px) {
+    
+    .main_container .container_section{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    
+   
+
+   }
